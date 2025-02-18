@@ -1,0 +1,27 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Sushant Sah
+ID: 169060628      
+Email: sahx0628@mylaurier.ca  
+Date: 2025-01-17 
+-------------------------------------------------------
+Answers for Lab 1
+-------------------------------------------------------
+
+Task 1
+The behaviour of the program does not change in any way, as the output converts the decimal 14 and 0xE into the same binary value regardless.
+ 
+Task 2
+Yes it is legal to do this, as using ADD will simply just take the values from the register, add them together and store the result back in the same register. 
+
+
+Task 3
+Adding the immediate values #4 and #5 will result in an error as the add function can only handle one immediate number as well as one register, making it illegal. 
+
+Instead we make a new register called r4, and store #4 and then add that to #5.
+
+mov r4, #4
+add r4, r4, #5
+
+which will then add the two numbers 
